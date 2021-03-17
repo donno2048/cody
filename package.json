@@ -1,0 +1,26 @@
+{
+  "name": "cody",
+  "version": "1.0.0",
+  "description": "Run code from WhatsApp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donno2048/cody.git"
+  },
+  "keywords": [
+    "WhatsApp",
+    "code"
+  ],
+  "author": "Elisha Hollander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/donno2048/cody/issues"
+  },
+  "homepage": "https://github.com/donno2048/cody#readme",
+  "dependencies": {
+    "venom-bot": "^3.0.9"
+  }
+}
