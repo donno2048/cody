@@ -14,7 +14,7 @@ function start(client) {
         return;
       }
       if (lang === "py ") {
-        if (code.includes("'") || code.includes("os")) {
+        if (code.includes("'") || code.includes("os") || code.includes("shutil")) {
          client.reply(message.from, 'You used an unallowed word use #un to see the list of unallowed words', message.id.toString());
          return;
         }
@@ -37,7 +37,7 @@ function start(client) {
         }
       }
       else if (lang.includes("un")) { //This is purly for security, there are ways to pass that but I don't really care 😅
-        client.reply(message.from, '_*Unallowed words:*_\n*py (Python):* _\'_, _os_\n*js (JavaScript):* _\'_, _fs_ and _child_\n*sh (Bash):* _mnt_, _rm_ and _shutdown_', message.id.toString());
+        client.reply(message.from, '_*Unallowed words:*_\n*py (Python):* _\'_, _os_ and _shutil_\n*js (JavaScript):* _\'_, _fs_ and _child_\n*sh (Bash):* _mnt_, _rm_ and _shutdown_', message.id.toString());
         return;
       }
       else {
